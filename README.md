@@ -1,4 +1,4 @@
-# ejs
+# Template
 
 instalar dependencias:
 npm install
@@ -13,7 +13,7 @@ en email.js linea 17 tambien añadir variables.
 empezar a debuggear:
 npm start
 
-abri el navegador en http://localhost:3000/
+abri el navegador en http://localhost:3001/
 
 
 
