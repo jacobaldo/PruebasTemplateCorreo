@@ -1,0 +1,263 @@
+<html>
+  <head>
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <style>
+       body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      :root {
+        --color-text-light: #141414;
+        --color-text-dark: #ffffff;
+        --color-header-light: #eaebf0;
+        --color-header-dark: #25242a;
+        --color-footer-light: #f3f3f3;
+        --color-footer-dark: #25242a;
+        --color-footer-text-light: #545454;
+        --color-footer-text-dark: #adadad;
+        --color-email-link-light: #003c73;
+        --color-email-link-dark: #0082cd;
+      }
+
+        @media (prefers-color-scheme: dark) {
+        .text,
+        p,
+        b,
+        a,
+        h1 {
+          color: var(--color-text-dark);
+        }
+        p {
+          color: var(--color-text-dark);
+        }
+        .navbar {
+          background-color: var(--color-header-dark);
+        }
+        footer {
+          background-color: var(--color-footer-dark);
+        }
+        .footerText {
+          color: var(--color-footer-text-dark);
+        }
+        .emailLink {
+          color: var(--color-email-link-dark);
+        }
+      }
+      @media (prefers-color-scheme: light) {
+        .text {
+          color: var(--text-color-light);
+        }
+        p {
+          color: var(--text-color-light);
+        }
+        .navbar {
+          background-color: var(--color-header-light);
+        }
+        footer {
+          background-color: var(--color-footer-light);
+        }
+        .footerText {
+          color: var(--color-footer-text-light);
+        }
+        .emailLink {
+          color: var(--color-email-link-light);
+        }
+      }
+    </style>
+  </head>
+  <body style="padding: 0; margin: 0; color: #111">
+    <div style="margin-top: 0 !important; margin: 0 auto; max-width: 600px">
+      <nav style="text-align: center; padding-top: 1rem">
+        <div style="text-align: center; margin-bottom: 20px">
+          <img
+            src="https://cloud.qik.com.do/templateImages/Logo-Qik.png"
+            alt=""
+          />
+        </div>
+        <div class="navbar" style="width: 100%; padding-top: 0.2rem;padding-bottom: 0.2rem; background-color: #EAEBF0;">
+          <h2
+            class="text"
+            style="
+              text-align: center;
+              font-family: Rubik, Arial;
+              font-size: 20px;
+              font-weight: bold;
+              color: black;
+            "
+          >
+            Hola&nbsp;<%= name %>
+          </h2>
+          <h4
+            class="text"
+            style="
+              text-align: center;
+              font-family: Rubik, Arial;
+              font-size: 14px;
+              font-weight: 100;
+              color: black;
+            "
+          >
+            C&eacute;dula&nbsp;<%= national_id %>
+          </h4>
+        </div>
+        <img
+          alt=""
+          style="text-align: center; justify-content: center"
+          width="100%"
+          src="https://dev.cloud.qik.com.do/templateImages/PendingLoanEmail.png"
+        />
+      </nav>
+      <div style="text-align: center">
+        <h1
+          class="text"
+          style="
+            text-align: left;
+            font-family: Arial;
+            font-size: 20px;
+            margin-top: 2rem;
+          "
+        >
+          Queremos ser parte de tus metas.
+        </h1>
+      </div>
+      <div
+        style="
+          font-size: 16px;
+          font-family: Arial;
+          justify-content: left;
+          line-height: 24px;
+          text-align: left;
+        "
+      >
+        <p>
+          Dejaste la solicitud de tu pr&eacute;stamo. Te invitamos a que vuelvas
+          para que est&eacute;s m&aacute;s cerca de tus objetivos.
+        </p>
+        <br/>
+        <br/>
+        <p>
+          ¡Nos vemos en el app!<br />
+          Equipo Qik. <br /><br />
+        </p>
+      </div>
+​
+     
+    </div>
+    <div style="margin-top: 0 !important; margin: 0 auto; max-width: 600px ;
+      background-color: #f3f3f3;">
+        <footer
+          style="
+            margin-top: 30px;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            background-color: #f3f3f3;
+                align-items: center;
+                align-self: center;    
+          "
+        >
+          <div style="width: fit-content;
+                  justify-content: center;
+                align-items: center;
+                align-self: center;                
+                text-align: center; " >
+            
+         
+            <p 
+              class="footerText"
+              style="
+                font-size: 12px;
+                margin-bottom: 1rem !important;
+                font-family: Arial;
+                line-height: 14px;
+                padding-top: 24px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                align-self: center;
+              "
+            >
+            ¿Necesitas ayuda? Te atendemos en un Qik:
+              <br />
+   
+            scríbenos a través del
+            <img
+            src="https://dev.cloud.qik.com.do/templateImages/Group.png"
+            width="12"
+            height="12"
+          />
+              <a
+                class="emailLink"
+                href="mailto:ayuda@qik.com.do"
+                style="text-decoration: none"
+                >QikChat</a
+                
+              >
+               en el app.
+            </p>
+            <hr
+              style="
+                line-height: 1px;
+                border-color: #e9ebec;
+                opacity: 0.3;
+                width: 94%;
+              "
+            />
+            <p
+              class="footerText"
+              style="
+                font-size: 10px;
+                margin-bottom: 1rem !important;
+                font-family: Arial;
+                text-align: left;
+                line-height: 14px;
+                display: inline-block;
+                margin: 1rem;
+                padding-left: 16px;
+                padding-right: 16px;
+              "
+            >En Qik tenemos el compromiso de prevenir correos
+             electrónicos fraudulentos. Nunca te solicitaremos datos personales
+              o financieros como cédula, contraseña, número de tarjeta de crédito, 
+              fecha de vencimiento y código de seguridad mediante
+               enlaces al correo electrónico o llamadas telefónicas.
+               <br />
+               <br />
+            Solo enviáremos correos personalizados, es decir, 
+            con tu primer nombre y el número de cédula enmascarado 
+            mostrando los últimos dígitos de tu documento de identidad.
+            </p>
+            <hr
+              style="
+                line-height: 1px;
+                border-color: #e9ebec;
+                opacity: 0.3;
+                width: 94%;
+              "
+            />
+            <p
+              class="footerText"
+              style="
+                font-size: 12px;
+                margin-bottom: 1rem !important;
+                font-family: Arial;
+                line-height: 14px;
+                display: inline-block;
+                justify-content: center;
+                align-items: center;
+                align-self: center;                
+                text-align: center;
+              "
+            >
+              Copyright © Qik Banco Digital Dominicano S.A.,
+              <br />
+              Banco M&uacute;ltiple.
+              <br />
+              Todos los derechos reservados.
+            </p>
+          </div>
+        </footer>
+      </div>
+  </body>
+</html>
